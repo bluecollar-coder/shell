@@ -1,3 +1,5 @@
-!#/bin/bash
+#!/bin/bash
 
-1). test this file
+ls
+
+cat /etc/passwd
