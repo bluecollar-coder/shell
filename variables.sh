@@ -46,9 +46,10 @@ echo $a
 # so , you can not hack it and be root
 
 # vector- array : below is the way to declare an array in script and assign values to it
-a=(10 20 30)
+b=(10 20 30)
 # to access values of array
-echo ${a[]}
-echo ${a[2]}
+echo ${b[]}
+echo ${b[2]}
+echo ${b[0]}
 
 
