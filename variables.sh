@@ -29,6 +29,8 @@ echo Today date is:$DATE
 # variables are by default over-writable
 a=10
 echo $a
+# or  below - as both are 2 ways to access a variable in shell
+echo ${a}
 a=20
 echo $a
 a=30
@@ -42,5 +44,11 @@ echo $a
 #now you can access it but cannot assign anything to it again till this shell process life
 # use case usually is e.g. user id(UID) 0 is assigned by sheel process to root user and that is readonly by shell process on start
 # so , you can not hack it and be root
+
+# vector- array : below is the way to declare an array in script and assign values to it
+a=(10 20 30)
+# to access values of array
+echo ${a[]}
+echo ${a[2]}
 
 
