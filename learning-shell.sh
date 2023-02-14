@@ -9,3 +9,7 @@
 ls test.sh
 ls 'test.sh'
 ls "$SHELL"
+
+
+ls -e "\e[33m hello \e[0m"
+ls -e "\e[32m hello again\e[0m"
