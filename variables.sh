@@ -25,3 +25,16 @@ echo Today date is:$DATE
 # usual approach by variable naming is 1). if coming from shell background then All CAPS
 # 2). if from programming then use camelcase
 # however choice is yours
+
+# variables are by default over-writable
+a=10
+a=20
+a=30
+# above is fine
+# however you can make them readonly by providing 'readonly' to them. but once they are made readonly then till this shell run life you can never mark them as non-readonly
+readonly a
+#now you can access it but cannot assign anything to it again till this shell process life
+# use case usually is e.g. user id(UID) 0 is assigned by sheel process to root user and that is readonly by shell process on start
+# so , you can not hack it and be root
+
+
