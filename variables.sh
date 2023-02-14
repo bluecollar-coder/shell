@@ -56,5 +56,8 @@ echo ${b[0]}
 # local variables
 # export and importing variables
 echo c=$c
+# export will basically move this variable from local scope to ENVIRONMENT scope
+# export c
+echo $c
 
 
