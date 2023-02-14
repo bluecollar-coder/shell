@@ -55,6 +55,6 @@ echo ${b[0]}
 
 # local variables
 # export and importing variables
-c=$c
+echo c=$c
 
 
