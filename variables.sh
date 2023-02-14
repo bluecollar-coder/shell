@@ -18,3 +18,10 @@ DATE=$(date +%F)
 echo Today date is:$DATE
 DATE=$(date +%F-%H-%M-%S)
 echo Today date is:$DATE
+
+# Variable Naming Conventions
+# variables never can start with numerals but can have numerals,alphabets & underscore
+# variables are string only and so no data types
+# usual approach by variable naming is 1). if coming from shell background then All CAPS
+# 2). if from programming then use camelcase
+# however choice is yours
