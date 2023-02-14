@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Script name \e[34m $0 \e[0m"
+echo -e "Script name \e[34m $0 \e[0m"
 
 echo -e "1st argument passed to the script \e[34m $0 \e[0m is:" $1
 
