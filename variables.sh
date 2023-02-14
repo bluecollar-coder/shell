@@ -54,10 +54,17 @@ echo ${b[2]}
 echo ${b[0]}
 
 # local variables
-# export and importing variables
+# export  variables
 echo c=$c
 # export will basically move this variable from local scope to ENVIRONMENT scope
 # export c
 echo $c
+
+# importing(sourcing) variables
+# you can define variables in a file e.g. in a.sh define a=10. b=20
+# then in another file e.g. b.sh use below
+source /a.txt
+a=$a
+# then if we execute this 2nd file we will get output as 10
 
 
