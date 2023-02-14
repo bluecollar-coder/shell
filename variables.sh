@@ -28,11 +28,17 @@ echo Today date is:$DATE
 
 # variables are by default over-writable
 a=10
+echo $a
 a=20
+echo $a
 a=30
+echo $a
 # above is fine
 # however you can make them readonly by providing 'readonly' to them. but once they are made readonly then till this shell run life you can never mark them as non-readonly
 readonly a
+echo $a
+a=40
+echo $a
 #now you can access it but cannot assign anything to it again till this shell process life
 # use case usually is e.g. user id(UID) 0 is assigned by sheel process to root user and that is readonly by shell process on start
 # so , you can not hack it and be root
