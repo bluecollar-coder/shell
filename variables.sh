@@ -47,9 +47,14 @@ echo $a
 
 # vector- array : below is the way to declare an array in script and assign values to it
 b=(10 20 30)
-# to access values of array
+# wrong way to access values of array
 echo ${b[]}
+# to access values of array
 echo ${b[2]}
 echo ${b[0]}
+
+# local variables
+# export and importing variables
+c=$c
 
 
